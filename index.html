@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <meta name="description" content="Discover premium products at ShopEase. Shop fashion, electronics, and home decor with free shipping on orders over $50.">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="ShopEase - Modern E-commerce Store">
+    <meta property="og:description" content="Discover premium products at ShopEase. Shop fashion, electronics, and home decor with free shipping on orders over $50.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">ShopEase</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link">All Products</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Categories <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="fashion.html">Fashion</a>
+                            <a href="electronics.html">Electronics</a>
+                            <a href="home-decor.html">Home Decor</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-actions">
+                <a href="search.html" class="nav-icon"><i class="fas fa-search"></i></a>
+                <a href="#" class="nav-icon"><i class="fas fa-heart"></i></a>
+                <a href="cart.html" class="nav-icon"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Slider -->
+    <section class="hero-slider">
+        <div class="slide active">
+            <img src="https://pixabay.com/get/g6a4ff0a505f42d10e30a244e4acc3a11a39cdb2369f5126811a7af0597fb221bfb3989b6dd86630a62c9bc4020d23b5b3c492d93d1fd8e0c9dac2e52d6622e41_1280.jpg" alt="Fashion Collection">
+            <div class="slide-content">
+                <h1>New Fashion Collection</h1>
+                <p>Discover the latest trends in fashion</p>
+                <a href="fashion.html" class="btn btn-primary">Shop Now</a>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="https://pixabay.com/get/g804d8ba1ad824537169c3abb210ce8d032f51ffff97636bd846d10b7b7f4ac8553abf39faf49dbd816cbba04b56af9096f0a22f3ec950835fd37076d667b3c6a_1280.jpg" alt="Electronics">
+            <div class="slide-content">
+                <h1>Latest Electronics</h1>
+                <p>Cutting-edge technology at your fingertips</p>
+                <a href="electronics.html" class="btn btn-primary">Shop Now</a>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="https://pixabay.com/get/g8fdd06443e26bea930342e05af68efa34438743ff45dd8dbdf275cf31feb28527e4341c1c2085ac89c972707095fd0d1993581d53a92add3d5595a23d49d2474_1280.jpg" alt="Home Decor">
+            <div class="slide-content">
+                <h1>Beautiful Home Decor</h1>
+                <p>Transform your space with our curated collection</p>
+                <a href="home-decor.html" class="btn btn-primary">Shop Now</a>
+            </div>
+        </div>
+        <div class="slider-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+        </div>
+    </section>
+
+    <!-- Shop by Category -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="https://pixabay.com/get/g57c42178663be134e33a981fc30f86caa21545ebc8b0ee8cce860e7edab4fed7b73dd286f660e89bf30f90cc966707f12b0f1ec292ba4cc7b342806390484e83_1280.jpg" alt="Fashion">
+                    <div class="category-overlay">
+                        <h3>Fashion</h3>
+                        <p>Trendy styles for every occasion</p>
+                        <a href="fashion.html" class="btn btn-outline">Explore</a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="https://pixabay.com/get/g45e334953256cb6cd16d5a8afbd7a1db25495323ef1a863bbeccf4a52305d19e7869e16de0e94df5bae4046d8e79d06febb96b3589f2cf28883637939061e64b_1280.jpg" alt="Electronics">
+                    <div class="category-overlay">
+                        <h3>Electronics</h3>
+                        <p>Latest tech and gadgets</p>
+                        <a href="electronics.html" class="btn btn-outline">Explore</a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="https://pixabay.com/get/g27b54d2a6dcb5dd8e8412a86b5447373bce2628702f93a1cd900fb532a4f7df514bba59d5a8f7ea6fce7612574b794318760c0859985bbda631ef6ebb19a138b_1280.jpg" alt="Home Decor">
+                    <div class="category-overlay">
+                        <h3>Home Decor</h3>
+                        <p>Beautiful pieces for your home</p>
+                        <a href="home-decor.html" class="btn btn-outline">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Products -->
+    <section class="products">
+        <div class="container">
+            <h2 class="section-title">Latest Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/g5e81979567e758a23c24616dad1323cd465f5cd9e5c91d1ce85b22d46e079a5ddc20adf1f8a5288bad115e5b5f01982f3681ab8ba4d4015b258839209d767782_1280.jpg" alt="Beauty Product">
+                        <div class="product-overlay">
+                            <a href="products.html" class="btn btn-primary">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Beauty Set</h3>
+                        <p class="product-price">$49.99</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/g44ed12c06e76a142e3a07231951935d4515fdccc9590feb964ada77ef083625eac45caf225efc174b6369cace044e638f757925312a4ffcac474283e29ee6021_1280.jpg" alt="Smartphone">
+                        <div class="product-overlay">
+                            <a href="fashion.html" class="btn btn-primary">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Latest Smartphone</h3>
+                        <p class="product-price">$699.99</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/g9d304195177db4ff1523bce9eb5d986faa3455d7f461c9ada451f27a861af043c282fda512535518a3368a78246b0f10069693b11878f00d13df78cf285783df_1280.jpg" alt="Plant Pot">
+                        <div class="product-overlay">
+                            <a href="home-decor.html" class="btn btn-primary">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Decorative Plant Pot</h3>
+                        <p class="product-price">$24.99</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/g8797ccba7f6e6f80c9c89e01e41c3488908e2c161e4e67a99aa007d4fdeae17c6940341d81c5c137e403af830188bd3adc8d1865c807f64c5063d5452030d577_1280.jpg" alt="Hair Styling Tools">
+                        <div class="product-overlay">
+                            <a href="electronics.html" class="btn btn-primary">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Professional Hair Tools</h3>
+                        <p class="product-price">$89.99</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Free Shipping</h3>
+                    <p>Free shipping on all orders over $50</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-undo"></i>
+                    </div>
+                    <h3>Easy Returns</h3>
+                    <p>30-day return policy for all items</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Customer support available round the clock</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Secure Payment</h3>
+                    <p>Your payment information is safe with us</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ShopEase</h3>
+                    <p>Your trusted partner for premium quality products. We bring you the best in fashion, electronics, and home decor.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="fashion.html">Fashion</a></li>
+                        <li><a href="electronics.html">Electronics</a></li>
+                        <li><a href="home-decor.html">Home Decor</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ShopEase. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="/js/scroll.js"></script>
+</body>
+</html>

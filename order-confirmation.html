@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation - Thank You | ShopEase</title>
+    <meta name="description" content="Your order has been confirmed! View your order details and tracking information. Thank you for shopping with ShopEase.">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">ShopEase</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link">All Products</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Categories <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="fashion.html">Fashion</a>
+                            <a href="electronics.html">Electronics</a>
+                            <a href="home-decor.html">Home Decor</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-actions">
+                <a href="search.html" class="nav-icon"><i class="fas fa-search"></i></a>
+                <a href="#" class="nav-icon"><i class="fas fa-heart"></i></a>
+                <a href="cart.html" class="nav-icon"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Order Confirmation Hero -->
+    <section class="confirmation-hero">
+        <div class="container">
+            <div class="confirmation-content">
+                <div class="confirmation-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h1>Order Confirmed!</h1>
+                <p>Thank you for your purchase. Your order has been successfully placed.</p>
+                <div class="order-number">
+                    <span>Order Number: <strong>#SE-2025-001234</strong></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Details -->
+    <section class="order-details-section">
+        <div class="container">
+            <div class="details-grid">
+                <!-- Order Status -->
+                <div class="status-card">
+                    <h2>Order Status</h2>
+                    <div class="status-timeline">
+                        <div class="status-step active">
+                            <div class="step-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="step-content">
+                                <h3>Order Confirmed</h3>
+                                <p>January 25, 2025 at 2:30 PM</p>
+                            </div>
+                        </div>
+                        
+                        <div class="status-step">
+                            <div class="step-icon">
+                                <i class="fas fa-box"></i>
+                            </div>
+                            <div class="step-content">
+                                <h3>Processing</h3>
+                                <p>We're preparing your items</p>
+                            </div>
+                        </div>
+                        
+                        <div class="status-step">
+                            <div class="step-icon">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <div class="step-content">
+                                <h3>Shipped</h3>
+                                <p>Expected January 27, 2025</p>
+                            </div>
+                        </div>
+                        
+                        <div class="status-step">
+                            <div class="step-icon">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <div class="step-content">
+                                <h3>Delivered</h3>
+                                <p>Expected February 1, 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="order-summary-card">
+                    <h2>Order Summary</h2>
+                    <div class="order-items">
+                        <div class="order-item">
+                            <div class="item-image">
+                                <img src="https://pixabay.com/get/g5e81979567e758a23c24616dad1323cd465f5cd9e5c91d1ce85b22d46e079a5ddc20adf1f8a5288bad115e5b5f01982f3681ab8ba4d4015b258839209d767782_1280.jpg" alt="Premium Beauty Set">
+                            </div>
+                            <div class="item-info">
+                                <h3>Premium Beauty Set</h3>
+                                <p>Complete Set • Organic</p>
+                                <div class="item-qty-price">
+                                    <span>Qty: 1</span>
+                                    <span class="price">$49.99</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="order-item">
+                            <div class="item-image">
+                                <img src="https://pixabay.com/get/g44ed12c06e76a142e3a07231951935d4515fdccc9590feb964ada77ef083625eac45caf225efc174b6369cace044e638f757925312a4ffcac474283e29ee6021_1280.jpg" alt="Latest Smartphone">
+                            </div>
+                            <div class="item-info">
+                                <h3>Latest 5G Smartphone</h3>
+                                <p>128GB • Black</p>
+                                <div class="item-qty-price">
+                                    <span>Qty: 1</span>
+                                    <span class="price">$699.99</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="order-item">
+                            <div class="item-image">
+                                <img src="https://pixabay.com/get/g9d304195177db4ff1523bce9eb5d986faa3455d7f461c9ada451f27a861af043c282fda512535518a3368a78246b0f10069693b11878f00d13df78cf285783df_1280.jpg" alt="Plant Pot">
+                            </div>
+                            <div class="item-info">
+                                <h3>Ceramic Plant Pot Collection</h3>
+                                <p>Set of 3 • Medium</p>
+                                <div class="item-qty-price">
+                                    <span>Qty: 2</span>
+                                    <span class="price">$49.98</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="order-totals">
+                        <div class="total-row">
+                            <span>Subtotal:</span>
+                            <span>$799.96</span>
+                        </div>
+                        <div class="total-row">
+                            <span>Shipping:</span>
+                            <span class="free">FREE</span>
+                        </div>
+                        <div class="total-row">
+                            <span>Tax:</span>
+                            <span>$64.00</span>
+                        </div>
+                        <div class="total-row grand-total">
+                            <span>Total:</span>
+                            <span>$863.96</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Shipping & Billing Info -->
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>Shipping Address</h3>
+                    <div class="address-info">
+                        <p><strong>John Doe</strong></p>
+                        <p>123 Main Street</p>
+                        <p>Apartment 4B</p>
+                        <p>New York, NY 10001</p>
+                        <p>United States</p>
+                        <p>Phone: (555) 123-4567</p>
+                    </div>
+                </div>
+                
+                <div class="info-card">
+                    <h3>Billing Address</h3>
+                    <div class="address-info">
+                        <p><strong>John Doe</strong></p>
+                        <p>123 Main Street</p>
+                        <p>Apartment 4B</p>
+                        <p>New York, NY 10001</p>
+                        <p>United States</p>
+                    </div>
+                </div>
+                
+                <div class="info-card">
+                    <h3>Payment Method</h3>
+                    <div class="payment-info">
+                        <div class="payment-method">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Visa ending in 1234</span>
+                        </div>
+                        <p>Transaction ID: TXN789456123</p>
+                    </div>
+                </div>
+                
+                <div class="info-card">
+                    <h3>Shipping Method</h3>
+                    <div class="shipping-info">
+                        <div class="shipping-method">
+                            <i class="fas fa-truck"></i>
+                            <span>Standard Shipping</span>
+                        </div>
+                        <p>5-7 business days</p>
+                        <p>Tracking will be available once shipped</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Steps -->
+    <section class="next-steps">
+        <div class="container">
+            <h2 class="section-title">What Happens Next?</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Confirmation</h3>
+                    <p>You'll receive an order confirmation email shortly with all the details.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Order Processing</h3>
+                    <p>We'll carefully prepare and package your items within 1-2 business days.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Shipping Updates</h3>
+                    <p>Track your package with real-time updates sent to your email.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Leave a Review</h3>
+                    <p>Share your experience and help other customers make informed decisions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Actions -->
+    <section class="order-actions">
+        <div class="container">
+            <div class="actions-content">
+                <h2>Need Help?</h2>
+                <p>Our customer support team is here to assist you with any questions about your order.</p>
+                <div class="action-buttons">
+                    <a href="contact.html" class="btn btn-outline">
+                        <i class="fas fa-headset"></i>
+                        Contact Support
+                    </a>
+                    <a href="products.html" class="btn btn-primary">
+                        <i class="fas fa-shopping-bag"></i>
+                        Continue Shopping
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ShopEase</h3>
+                    <p>Your trusted partner for premium quality products. We bring you the best in fashion, electronics, and home decor.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="fashion.html">Fashion</a></li>
+                        <li><a href="electronics.html">Electronics</a></li>
+                        <li><a href="home-decor.html">Home Decor</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ShopEase. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .confirmation-hero {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            padding: 120px 0 80px;
+            margin-top: 70px;
+            text-align: center;
+            color: white;
+        }
+
+        .confirmation-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .confirmation-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .confirmation-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .order-number {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            display: inline-block;
+            font-size: 1.1rem;
+        }
+
+        .order-details-section {
+            padding: 80px 0;
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .status-card,
+        .order-summary-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .status-card h2,
+        .order-summary-card h2 {
+            margin-bottom: 2rem;
+            font-size: 1.3rem;
+        }
+
+        .status-timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .status-step {
+            display: flex;
+            gap: 1rem;
+            position: relative;
+        }
+
+        .status-step:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 50px;
+            width: 2px;
+            height: 30px;
+            background: #e5e7eb;
+        }
+
+        .status-step.active::after {
+            background: #10b981;
+        }
+
+        .step-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #f3f4f6;
+            color: #9ca3af;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .status-step.active .step-icon {
+            background: #10b981;
+            color: white;
+        }
+
+        .step-content h3 {
+            margin-bottom: 0.25rem;
+            font-size: 1rem;
+        }
+
+        .step-content p {
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+
+        .order-items {
+            margin-bottom: 2rem;
+        }
+
+        .order-item {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #f3f4f6;
+        }
+
+        .order-item:last-child {
+            border-bottom: none;
+        }
+
+        .item-image img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .item-info {
+            flex: 1;
+        }
+
+        .item-info h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .item-info p {
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .item-qty-price {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .price {
+            font-weight: 600;
+            color: #2563eb;
+        }
+
+        .order-totals {
+            border-top: 1px solid #e5e7eb;
+            padding-top: 1rem;
+        }
+
+        .total-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+
+        .total-row.grand-total {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #1f2937;
+            padding-top: 0.5rem;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        .free {
+            color: #10b981;
+            font-weight: 500;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .info-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .info-card h3 {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            color: #1f2937;
+        }
+
+        .address-info p {
+            margin-bottom: 0.25rem;
+            color: #6b7280;
+        }
+
+        .payment-method,
+        .shipping-method {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .payment-info p,
+        .shipping-info p {
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .next-steps {
+            padding: 80px 0;
+            background: #f9fafb;
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .step-card {
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .step-card .step-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem;
+        }
+
+        .step-card h3 {
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .step-card p {
+            color: #6b7280;
+            line-height: 1.6;
+        }
+
+        .order-actions {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .actions-content h2 {
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        .actions-content p {
+            margin-bottom: 2rem;
+            color: #6b7280;
+            font-size: 1.1rem;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        @media (max-width: 768px) {
+            .details-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .steps-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .action-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .confirmation-content h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</body>
+</html>

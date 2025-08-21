@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - ShopEase</title>
+    <meta name="description" content="Browse our complete collection of premium products. Find the perfect items from fashion, electronics, and home decor categories.">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">ShopEase</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link active">All Products</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Categories <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="fashion.html">Fashion</a>
+                            <a href="electronics.html">Electronics</a>
+                            <a href="home-decor.html">Home Decor</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-actions">
+                <a href="#" class="nav-icon"><i class="fas fa-search"></i></a>
+                <a href="#" class="nav-icon"><i class="fas fa-heart"></i></a>
+                <a href="#" class="nav-icon"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>All Products</h1>
+            <p>Discover our complete collection of premium products</p>
+        </div>
+    </section>
+
+    <!-- Product Filters -->
+    <section class="product-filters">
+        <div class="container">
+            <div class="filter-bar">
+                <div class="filter-group">
+                    <label for="category">Category:</label>
+                    <select id="category">
+                        <option value="all">All Categories</option>
+                        <option value="fashion">Fashion</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="home-decor">Home Decor</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="price">Price Range:</label>
+                    <select id="price">
+                        <option value="all">All Prices</option>
+                        <option value="0-50">$0 - $50</option>
+                        <option value="50-100">$50 - $100</option>
+                        <option value="100-500">$100 - $500</option>
+                        <option value="500+">$500+</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="sort">Sort By:</label>
+                    <select id="sort">
+                        <option value="featured">Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="newest">Newest</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="container">
+            <div class="product-grid">
+                <!-- Fashion Products -->
+                <div class="product-card" data-category="fashion">
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/g5e81979567e758a23c24616dad1323cd465f5cd9e5c91d1ce85b22d46e079a5ddc20adf1f8a5288bad115e5b5f01982f3681ab8ba4d4015b258839209d767782_1280.jpg" alt="Beauty Product Set">
+                        <div class="product-overlay">
+                            <a href="product-detail.html" class="btn btn-primary">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Beauty Set</h3>
+                        <p class="product-price">$49.99</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="fashion">
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/g8797ccba7f6e6f80c9c89e01e41c3488908e2c161e4e67a99aa007d4fdeae17c6940341d81c5c137e403af830188bd3adc8d1865c807f64c5063d5452030d577_1280.jpg" alt="Hair Styling Tools">
+                        <div class="product-overlay">
+                            <a href="product-detail.html" class="btn btn-primary">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Professional Hair Tools</h3>
+                        <p class="product-price">$89.99</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="fashion">
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/g57c42178663be134e33a981fc30f86caa21545ebc8b0ee8cce860e7edab4fed7b73dd286f660e89bf30f90cc966707f12b0f1ec292ba4cc7b342806390484e83_1280.jpg" alt="Fashion Accessories">
+                        <div class="product-overlay">
+                            <a href="product-detail.html" class="btn btn-primary">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Elegant Fashion Accessories</h3>
+                        <p class="product-price">$34.99</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Electronics Products -->
+                <div class="product-card" data-category="electronics">
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/g44ed12c06e76a142e3a07231951935d4515fdccc9590feb964ada77ef083625eac45caf225efc174b6369cace044e638f757925312a4ffcac474283e29ee6021_1280.jpg" alt="Smartphone">
+                        <div class="product-overlay">
+                            <a href="product-detail.html" class="btn btn-primary">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Latest Smartphone</h3>
+                        <p class="product-price">$699.99</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="electronics">
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/g804d8ba1ad824537169c3abb210ce8d032f51ffff97636bd846d10b7b7f4ac8553abf39faf49dbd816cbba04b56af9096f0a22f3ec950835fd37076d667b3c6a_1280.jpg" alt="Laptop">
+                        <div class="product-overlay">
+                            <a href="product-detail.html" class="btn btn-primary">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Laptop</h3>
+                        <p class="product-price">$1299.99</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="electronics">
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/g45e334953256cb6cd16d5a8afbd7a1db25495323ef1a863bbeccf4a52305d19e7869e16de0e94df5bae4046d8e79d06febb96b3589f2cf28883637939061e64b_1280.jpg" alt="Headphones">
+                        <div class="product-overlay">
+                            <a href="product-detail.html" class="btn btn-primary">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Wireless Headphones</h3>
+                        <p class="product-price">$199.99</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Home Decor Products -->
+                <div class="product-card" data-category="home-decor">
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/g9d304195177db4ff1523bce9eb5d986faa3455d7f461c9ada451f27a861af043c282fda512535518a3368a78246b0f10069693b11878f00d13df78cf285783df_1280.jpg" alt="Plant Pot">
+                        <div class="product-overlay">
+                            <a href="product-detail.html" class="btn btn-primary">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Decorative Plant Pot</h3>
+                        <p class="product-price">$24.99</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="home-decor">
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/g8fdd06443e26bea930342e05af68efa34438743ff45dd8dbdf275cf31feb28527e4341c1c2085ac89c972707095fd0d1993581d53a92add3d5595a23d49d2474_1280.jpg" alt="Home Decoration">
+                        <div class="product-overlay">
+                            <a href="product-detail.html" class="btn btn-primary">Quick View</a>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Modern Home Decor</h3>
+                        <p class="product-price">$79.99</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ShopEase</h3>
+                    <p>Your trusted partner for premium quality products. We bring you the best in fashion, electronics, and home decor.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="fashion.html">Fashion</a></li>
+                        <li><a href="electronics.html">Electronics</a></li>
+                        <li><a href="home-decor.html">Home Decor</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ShopEase. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="/js/scroll.js"></script>
+
+    <style>
+        .page-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+            margin-top: 70px;
+        }
+
+        .page-header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .page-header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .product-filters {
+            background-color: #f8fafc;
+            padding: 30px 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .filter-bar {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .filter-group {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .filter-group label {
+            font-weight: 500;
+            color: #374151;
+        }
+
+        .filter-group select {
+            padding: 8px 12px;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            background-color: white;
+            color: #374151;
+            font-size: 0.9rem;
+        }
+
+        .products-section {
+            padding: 60px 0;
+        }
+
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 2.5rem;
+            }
+
+            .filter-bar {
+                flex-direction: column;
+                gap: 1rem;
+                align-items: stretch;
+            }
+
+            .filter-group {
+                justify-content: space-between;
+            }
+        }
+    </style>
+</body>
+</html>

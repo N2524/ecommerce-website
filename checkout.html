@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Secure Payment | ShopEase</title>
+    <meta name="description" content="Complete your purchase securely with our encrypted checkout process. Review your order and enter shipping information.">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">ShopEase</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link">All Products</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Categories <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="fashion.html">Fashion</a>
+                            <a href="electronics.html">Electronics</a>
+                            <a href="home-decor.html">Home Decor</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-actions">
+                <a href="search.html" class="nav-icon"><i class="fas fa-search"></i></a>
+                <a href="#" class="nav-icon"><i class="fas fa-heart"></i></a>
+                <a href="cart.html" class="nav-icon"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Checkout Progress -->
+    <section class="checkout-progress">
+        <div class="container">
+            <div class="progress-steps">
+                <div class="step completed">
+                    <div class="step-icon"><i class="fas fa-shopping-cart"></i></div>
+                    <span>Cart</span>
+                </div>
+                <div class="step active">
+                    <div class="step-icon"><i class="fas fa-credit-card"></i></div>
+                    <span>Checkout</span>
+                </div>
+                <div class="step">
+                    <div class="step-icon"><i class="fas fa-check"></i></div>
+                    <span>Confirmation</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Checkout Content -->
+    <section class="checkout-section">
+        <div class="container">
+            <div class="checkout-grid">
+                <!-- Checkout Form -->
+                <div class="checkout-form">
+                    <form class="shipping-form" action="order-confirmation.html" method="POST">
+                        <!-- Contact Information -->
+                        <div class="form-section">
+                            <h2>Contact Information</h2>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="newsletter">
+                                    <span class="checkmark"></span>
+                                    Keep me updated with order notifications and promotions
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Shipping Address -->
+                        <div class="form-section">
+                            <h2>Shipping Address</h2>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company">Company (Optional)</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="address">Address *</label>
+                                <input type="text" id="address" name="address" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="apartment">Apartment, suite, etc. (Optional)</label>
+                                <input type="text" id="apartment" name="apartment">
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="city">City *</label>
+                                    <input type="text" id="city" name="city" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="state">State *</label>
+                                    <select id="state" name="state" required>
+                                        <option value="">Select State</option>
+                                        <option value="AL">Alabama</option>
+                                        <option value="CA">California</option>
+                                        <option value="FL">Florida</option>
+                                        <option value="NY">New York</option>
+                                        <option value="TX">Texas</option>
+                                        <option value="IN">India</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="zip">ZIP Code *</label>
+                                    <input type="text" id="zip" name="zip" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+
+                        <!-- Shipping Method -->
+                        <div class="form-section">
+                            <h2>Shipping Method</h2>
+                            <div class="shipping-options">
+                                <label class="shipping-option">
+                                    <input type="radio" name="shipping" value="standard" checked>
+                                    <div class="option-content">
+                                        <div class="option-info">
+                                            <h4>Standard Shipping</h4>
+                                            <p>5-7 business days</p>
+                                        </div>
+                                        <div class="option-price">FREE</div>
+                                    </div>
+                                </label>
+                                
+                                <label class="shipping-option">
+                                    <input type="radio" name="shipping" value="express">
+                                    <div class="option-content">
+                                        <div class="option-info">
+                                            <h4>Express Shipping</h4>
+                                            <p>2-3 business days</p>
+                                        </div>
+                                        <div class="option-price">$15.99</div>
+                                    </div>
+                                </label>
+                                
+                                <label class="shipping-option">
+                                    <input type="radio" name="shipping" value="overnight">
+                                    <div class="option-content">
+                                        <div class="option-info">
+                                            <h4>Overnight Shipping</h4>
+                                            <p>Next business day</p>
+                                        </div>
+                                        <div class="option-price">$29.99</div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Payment Method -->
+                        <div class="form-section">
+                            <h2>Payment Method</h2>
+                            <div class="payment-options">
+                                <label class="payment-option">
+                                    <input type="radio" name="payment" value="card" checked>
+                                    <div class="option-header">
+                                        <i class="fas fa-credit-card"></i>
+                                        <span>Credit Card</span>
+                                    </div>
+                                </label>
+                                
+                                <div class="card-details">
+                                    <div class="form-group">
+                                        <label for="cardNumber">Card Number *</label>
+                                        <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" required>
+                                    </div>
+                                    
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="expiry">Expiry Date *</label>
+                                            <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="cvv">CVV *</label>
+                                            <input type="text" id="cvv" name="cvv" placeholder="123" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="cardName">Name on Card *</label>
+                                        <input type="text" id="cardName" name="cardName" required>
+                                    </div>
+                                </div>
+                                
+                                <label class="payment-option">
+                                    <input type="radio" name="payment" value="paypal">
+                                    <div class="option-header">
+                                        <i class="fab fa-paypal"></i>
+                                        <span>PayPal</span>
+                                    </div>
+                                </label>
+                                
+                                <label class="payment-option">
+                                    <input type="radio" name="payment" value="apple-pay">
+                                    <div class="option-header">
+                                        <i class="fab fa-apple-pay"></i>
+                                        <span>Apple Pay</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Billing Address -->
+                        <div class="form-section">
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="sameAddress" checked>
+                                    <span class="checkmark"></span>
+                                    Billing address is the same as shipping address
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Place Order Button -->
+                        <button type="submit" class="btn btn-primary place-order-btn"onclick="window.location.href='order-confirmation.html'">
+                            <i class="fas fa-lock"></i>
+                            Complete Order
+                        </button>
+                        
+                        <div class="security-notice">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Your payment information is encrypted and secure</span>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="order-summary-checkout">
+                    <div class="summary-card">
+                        <h3>Order Summary</h3>
+                        
+                        <!-- Order Items -->
+                        <div class="order-items">
+                            <div class="order-item">
+                                <div class="item-image">
+                                    <img src="https://pixabay.com/get/g5e81979567e758a23c24616dad1323cd465f5cd9e5c91d1ce85b22d46e079a5ddc20adf1f8a5288bad115e5b5f01982f3681ab8ba4d4015b258839209d767782_1280.jpg" alt="Premium Beauty Set">
+                                    <span class="item-qty">1</span>
+                                </div>
+                                <div class="item-details">
+                                    <h4>Premium Beauty Set</h4>
+                                    <p>Complete Set</p>
+                                </div>
+                                <div class="item-price">$49.99</div>
+                            </div>
+                            
+                            <div class="order-item">
+                                <div class="item-image">
+                                    <img src="https://pixabay.com/get/g44ed12c06e76a142e3a07231951935d4515fdccc9590feb964ada77ef083625eac45caf225efc174b6369cace044e638f757925312a4ffcac474283e29ee6021_1280.jpg" alt="Latest Smartphone">
+                                    <span class="item-qty">1</span>
+                                </div>
+                                <div class="item-details">
+                                    <h4>Latest 5G Smartphone</h4>
+                                    <p>128GB, Black</p>
+                                </div>
+                                <div class="item-price">$699.99</div>
+                            </div>
+                            
+                            <div class="order-item">
+                                <div class="item-image">
+                                    <img src="https://pixabay.com/get/g9d304195177db4ff1523bce9eb5d986faa3455d7f461c9ada451f27a861af043c282fda512535518a3368a78246b0f10069693b11878f00d13df78cf285783df_1280.jpg" alt="Plant Pot">
+                                    <span class="item-qty">2</span>
+                                </div>
+                                <div class="item-details">
+                                    <h4>Ceramic Plant Pot</h4>
+                                    <p>Set of 3, Medium</p>
+                                </div>
+                                <div class="item-price">$49.98</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Pricing -->
+                        <div class="pricing-summary">
+                            <div class="summary-row">
+                                <span>Subtotal</span>
+                                <span>$799.96</span>
+                            </div>
+                            
+                            <div class="summary-row">
+                                <span>Shipping</span>
+                                <span class="free">FREE</span>
+                            </div>
+                            
+                            <div class="summary-row">
+                                <span>Tax</span>
+                                <span>$64.00</span>
+                            </div>
+                            
+                            <div class="summary-divider"></div>
+                            
+                            <div class="summary-row total">
+                                <span>Total</span>
+                                <span>$863.96</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ShopEase</h3>
+                    <p>Your trusted partner for premium quality products. We bring you the best in fashion, electronics, and home decor.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="fashion.html">Fashion</a></li>
+                        <li><a href="electronics.html">Electronics</a></li>
+                        <li><a href="home-decor.html">Home Decor</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ShopEase. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .checkout-progress {
+            background: #f9fafb;
+            padding: 2rem 0;
+            margin-top: 70px;
+        }
+
+        .progress-steps {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+        }
+
+        .step {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            color: #9ca3af;
+        }
+
+        .step.completed,
+        .step.active {
+            color: #2563eb;
+        }
+
+        .step-icon {
+            width: 50px;
+            height: 50px;
+            border: 2px solid #e5e7eb;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        .step.completed .step-icon,
+        .step.active .step-icon {
+            border-color: #2563eb;
+            background: #2563eb;
+            color: white;
+        }
+
+        .checkout-section {
+            padding: 3rem 0;
+        }
+
+        .checkout-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 3rem;
+        }
+
+        .form-section {
+            margin-bottom: 2.5rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .form-section:last-child {
+            border-bottom: none;
+        }
+
+        .form-section h2 {
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            color: #1f2937;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #374151;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #2563eb;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+
+        .checkmark {
+            width: 18px;
+            height: 18px;
+            border: 2px solid #d1d5db;
+            border-radius: 3px;
+            position: relative;
+        }
+
+        input[type="checkbox"]:checked + .checkmark {
+            background: #2563eb;
+            border-color: #2563eb;
+        }
+
+        input[type="checkbox"]:checked + .checkmark::after {
+            content: '✓';
+            position: absolute;
+            color: white;
+            font-size: 12px;
+            top: -2px;
+            left: 2px;
+        }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        .shipping-options,
+        .payment-options {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .shipping-option,
+        .payment-option {
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            padding: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .shipping-option:hover,
+        .payment-option:hover {
+            border-color: #2563eb;
+        }
+
+        .shipping-option input:checked + .option-content,
+        .payment-option input:checked ~ .option-header {
+            border-left: 4px solid #2563eb;
+            padding-left: 1rem;
+        }
+
+        .option-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .option-info h4 {
+            margin-bottom: 0.25rem;
+            font-size: 1rem;
+        }
+
+        .option-info p {
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+
+        .option-price {
+            font-weight: 600;
+            color: #2563eb;
+        }
+
+        .option-header {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 500;
+        }
+
+        .card-details {
+            margin-top: 1rem;
+            padding: 1rem;
+            background: #f9fafb;
+            border-radius: 6px;
+        }
+
+        .place-order-btn {
+            width: 100%;
+            padding: 15px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 2rem;
+        }
+
+        .security-notice {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            color: #10b981;
+            font-size: 0.9rem;
+        }
+
+        .order-summary-checkout {
+            position: sticky;
+            top: 100px;
+        }
+
+        .summary-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .summary-card h3 {
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+
+        .order-items {
+            margin-bottom: 1.5rem;
+        }
+
+        .order-item {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #f3f4f6;
+        }
+
+        .order-item:last-child {
+            border-bottom: none;
+        }
+
+        .item-image {
+            position: relative;
+            flex-shrink: 0;
+        }
+
+        .item-image img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        .item-qty {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background: #2563eb;
+            color: white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            font-size: 0.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .item-details {
+            flex: 1;
+        }
+
+        .item-details h4 {
+            margin-bottom: 0.25rem;
+            font-size: 0.9rem;
+        }
+
+        .item-details p {
+            color: #6b7280;
+            font-size: 0.8rem;
+        }
+
+        .item-price {
+            font-weight: 600;
+            color: #2563eb;
+        }
+
+        .pricing-summary {
+            padding-top: 1rem;
+        }
+
+        .summary-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.75rem;
+        }
+
+        .summary-row.total {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #1f2937;
+            padding-top: 0.75rem;
+        }
+
+        .free {
+            color: #10b981;
+            font-weight: 500;
+        }
+
+        .summary-divider {
+            height: 1px;
+            background: #e5e7eb;
+            margin: 1rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .checkout-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .progress-steps {
+                gap: 1.5rem;
+            }
+
+            .step span {
+                font-size: 0.8rem;
+            }
+
+            .order-summary-checkout {
+                position: static;
+                order: -1;
+            }
+        }
+    </style>
+</body>
+</html>

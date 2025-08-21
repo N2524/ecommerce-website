@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Products - ShopEase</title>
+    <meta name="description" content="Search our complete collection of premium products. Find the perfect items from fashion, electronics, and home decor categories.">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">ShopEase</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link">All Products</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Categories <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="fashion.html">Fashion</a>
+                            <a href="electronics.html">Electronics</a>
+                            <a href="home-decor.html">Home Decor</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-actions">
+                <a href="search.html" class="nav-icon active"><i class="fas fa-search"></i></a>
+                <a href="#" class="nav-icon"><i class="fas fa-heart"></i></a>
+                <a href="cart.html" class="nav-icon"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Hero -->
+    <section class="search-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Search Products</h1>
+                <p>Find exactly what you're looking for from our premium collection</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Form Section -->
+    <section class="search-form-section">
+        <div class="container">
+            <div class="search-form-card">
+                <form class="search-form" action="#" method="GET">
+                    <div class="search-input-container">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" name="q" placeholder="Search for products..." class="search-input" value="">
+                        <button type="submit" class="search-button">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Searches -->
+    <section class="popular-searches">
+        <div class="container">
+            <div class="popular-searches-card">
+                <h3>Popular Searches</h3>
+                <div class="popular-tags">
+                    <a href="?q=smartphone" class="popular-tag">smartphone</a>
+                    <a href="?q=laptop" class="popular-tag">laptop</a>
+                    <a href="?q=headphones" class="popular-tag">headphones</a>
+                    <a href="?q=beauty+set" class="popular-tag">beauty set</a>
+                    <a href="?q=home+decor" class="popular-tag">home decor</a>
+                    <a href="?q=fashion+accessories" class="popular-tag">fashion accessories</a>
+                    <a href="?q=plant+pot" class="popular-tag">plant pot</a>
+                    <a href="?q=hair+tools" class="popular-tag">hair tools</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Bar -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-card">
+                <div class="filter-header">
+                    <div class="filter-title">
+                        <i class="fas fa-filter"></i>
+                        <span>Filters & Sorting</span>
+                    </div>
+                    <div class="view-toggle">
+                        <button class="view-btn active" data-view="grid">
+                            <i class="fas fa-th"></i>
+                        </button>
+                        <button class="view-btn" data-view="list">
+                            <i class="fas fa-list"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="filter-controls">
+                    <div class="filter-group">
+                        <label for="category">Category:</label>
+                        <select name="category" id="category">
+                            <option value="all">All Categories</option>
+                            <option value="fashion">Fashion</option>
+                            <option value="electronics">Electronics</option>
+                            <option value="home-decor">Home Decor</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="price">Price Range:</label>
+                        <select name="price" id="price">
+                            <option value="all">All Prices</option>
+                            <option value="0-50">$0 - $50</option>
+                            <option value="50-100">$50 - $100</option>
+                            <option value="100-500">$100 - $500</option>
+                            <option value="500+">$500+</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="sort">Sort By:</label>
+                        <select name="sort" id="sort">
+                            <option value="featured">Featured</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="newest">Newest</option>
+                            <option value="rating">Best Rating</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="results-info">
+                    <span class="results-count">Showing 8 results</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Results -->
+    <section class="search-results">
+        <div class="container">
+            <div class="products-grid" id="products-grid">
+                <!-- Fashion Products -->
+                <div class="product-card" data-category="fashion" data-price="49.99">
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/g5e81979567e758a23c24616dad1323cd465f5cd9e5c91d1ce85b22d46e079a5ddc20adf1f8a5288bad115e5b5f01982f3681ab8ba4d4015b258839209d767782_1280.jpg" alt="Premium Beauty Set">
+                        <div class="product-badge best-seller">Best Seller</div>
+                        <div class="product-overlay">
+                            <a href="product-detail.html" class="btn btn-primary">Quick View</a>
+                            <div class="product-actions">
+                                <button class="action-btn wishlist-btn"><i class="fas fa-heart"></i></button>
+                                <button class="action-btn share-btn"><i class="fas fa-share"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Beauty Set</h3>
+                        <p class="product-description">Complete skincare and makeup collection with premium ingredients</p>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">5.0 (127 reviews)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$49.99</span>
+                            <span class="original-price">$79.99</span>
+                        </div>
+                        <div class="product-tags">
+                            <span class="tag">Beauty</span>
+                            <span class="tag">Skincare</span>
+                            <span class="tag">Premium</span>
+                        </div>
+                        <button class="add-to-cart-btn" onclick="window.location.href='cart.html'">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="fashion" data-price="89.99">
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/g8797ccba7f6e6f80c9c89e01e41c3488908e2c161e4e67a99aa007d4fdeae17c6940341d81c5c137e403af830188bd3adc8d1865c807f64c5063d5452030d577_1280.jpg" alt="Professional Hair Tools">
+                        <div class="product-badge new">New</div>
+                        <div class="product-overlay">
+                            <a href="product-detail.html" class="btn btn-primary">Quick View</a>
+                            <div class="product-actions">
+                                <button class="action-btn wishlist-btn"><i class="fas fa-heart"></i></button>
+                                <button class="action-btn share-btn"><i class="fas fa-share"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Professional Hair Tools</h3>
+                        <p class="product-description">Professional grade hair styling tools for salon results at home</p>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-count">4.0 (89 reviews)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$89.99</span>
+                            <span class="original-price">$119.99</span>
+                        </div>
+                        <div class="product-tags">
+                            <span class="tag">Hair</span>
+                            <span class="tag">Styling</span>
+                            <span class="tag">Professional</span>
+                        </div>
+                        <button class="add-to-cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="fashion" data-price="34.99">
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/g57c42178663be134e33a981fc30f86caa21545ebc8b0ee8cce860e7edab4fed7b73dd286f660e89bf30f90cc966707f12b0f1ec292ba4cc7b342806390484e83_1280.jpg" alt="Elegant Fashion Accessories">
+                        <div class="product-overlay">
+                            <a href="product-detail.html" class="btn btn-primary">Quick View</a>
+                            <div class="product-actions">
+                                <button class="action-btn wishlist-btn"><i class="fas fa-heart"></i></button>
+                                <button class="action-btn share-btn"><i class="fas fa-share"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Elegant Fashion Accessories</h3>
+                        <p class="product-description">Sophisticated accessories to complete your perfect look</p>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">5.0 (156 reviews)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$34.99</span>
+                        </div>
+                        <div class="product-tags">
+                            <span class="tag">Accessories</span>
+                            <span class="tag">Elegant</span>
+                            <span class="tag">Jewelry</span>
+                        </div>
+                        <button class="add-to-cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Electronics Products -->
+                <div class="product-card" data-category="electronics" data-price="699.99">
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/g44ed12c06e76a142e3a07231951935d4515fdccc9590feb964ada77ef083625eac45caf225efc174b6369cace044e638f757925312a4ffcac474283e29ee6021_1280.jpg" alt="Latest Smartphone">
+                        <div class="product-badge trending">Trending</div>
+                        <div class="tech-specs">
+                            <span class="spec">5G Ready</span>
+                            <span class="spec">128GB</span>
+                        </div>
+                        <div class="product-overlay">
+                            <a href="product-detail.html" class="btn btn-primary">Quick View</a>
+                            <div class="product-actions">
+                                <button class="action-btn wishlist-btn"><i class="fas fa-heart"></i></button>
+                                <button class="action-btn share-btn"><i class="fas fa-share"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Latest 5G Smartphone</h3>
+                        <p class="product-description">Cutting-edge smartphone with advanced features and 5G connectivity</p>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-count">4.0 (243 reviews)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$699.99</span>
+                        </div>
+                        <div class="product-tags">
+                            <span class="tag">Smartphone</span>
+                            <span class="tag">5G</span>
+                            <span class="tag">Technology</span>
+                        </div>
+                        <button class="add-to-cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="electronics" data-price="1299.99">
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/g804d8ba1ad824537169c3abb210ce8d032f51ffff97636bd846d10b7b7f4ac8553abf39faf49dbd816cbba04b56af9096f0a22f3ec950835fd37076d667b3c6a_1280.jpg" alt="Premium Laptop">
+                        <div class="product-badge premium">Premium</div>
+                        <div class="product-overlay">
+                            <a href="product-detail.html" class="btn btn-primary">Quick View</a>
+                            <div class="product-actions">
+                                <button class="action-btn wishlist-btn"><i class="fas fa-heart"></i></button>
+                                <button class="action-btn share-btn"><i class="fas fa-share"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Gaming Laptop</h3>
+                        <p class="product-description">High-performance laptop perfect for work and entertainment</p>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">5.0 (98 reviews)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$1,299.99</span>
+                        </div>
+                        <div class="product-tags">
+                            <span class="tag">Laptop</span>
+                            <span class="tag">Gaming</span>
+                            <span class="tag">Premium</span>
+                        </div>
+                        <button class="add-to-cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="electronics" data-price="199.99">
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/g7d5a6c1e4c4b52d3a4a0b3a40e85c7fa09b4e5b3d3c6c5c5b5c5b5c5b5c5b5c5_1280.jpg" alt="Wireless Headphones">
+                        <div class="product-badge sale">Sale</div>
+                        <div class="product-overlay">
+                            <a href="product-detail.html" class="btn btn-primary">Quick View</a>
+                            <div class="product-actions">
+                                <button class="action-btn wishlist-btn"><i class="fas fa-heart"></i></button>
+                                <button class="action-btn share-btn"><i class="fas fa-share"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Wireless Noise-Cancelling Headphones</h3>
+                        <p class="product-description">Premium wireless headphones with active noise cancellation</p>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-count">4.0 (176 reviews)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$199.99</span>
+                            <span class="original-price">$249.99</span>
+                        </div>
+                        <div class="product-tags">
+                            <span class="tag">Headphones</span>
+                            <span class="tag">Wireless</span>
+                            <span class="tag">Audio</span>
+                        </div>
+                        <button class="add-to-cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Home Decor Products -->
+                <div class="product-card" data-category="home-decor" data-price="24.99">
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/g8fdd06443e26bea930342e05af68efa34438743ff45dd8dbdf275cf31feb28527e4341c1c2085ac89c972707095fd0d1993581d53a92add3d5595a23d49d2474_1280.jpg" alt="Decorative Plant Pot">
+                        <div class="product-badge eco">Eco-Friendly</div>
+                        <div class="product-overlay">
+                            <a href="product-detail.html" class="btn btn-primary">Quick View</a>
+                            <div class="product-actions">
+                                <button class="action-btn wishlist-btn"><i class="fas fa-heart"></i></button>
+                                <button class="action-btn share-btn"><i class="fas fa-share"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Ceramic Plant Pot Collection</h3>
+                        <p class="product-description">Beautiful handcrafted ceramic plant pots for your home garden</p>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">5.0 (67 reviews)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$24.99</span>
+                        </div>
+                        <div class="product-tags">
+                            <span class="tag">Plants</span>
+                            <span class="tag">Ceramic</span>
+                            <span class="tag">Decor</span>
+                        </div>
+                        <button class="add-to-cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="home-decor" data-price="79.99">
+                    <div class="product-image">
+                        <img src="https://pixabay.com/get/g2b5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5_1280.jpg" alt="Modern Home Decor">
+                        <div class="product-badge designer">Designer</div>
+                        <div class="product-overlay">
+                            <a href="product-detail.html" class="btn btn-primary">Quick View</a>
+                            <div class="product-actions">
+                                <button class="action-btn wishlist-btn"><i class="fas fa-heart"></i></button>
+                                <button class="action-btn share-btn"><i class="fas fa-share"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Modern Wall Art Collection</h3>
+                        <p class="product-description">Contemporary art pieces to transform your living space</p>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-count">4.0 (134 reviews)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$79.99</span>
+                        </div>
+                        <div class="product-tags">
+                            <span class="tag">Wall Art</span>
+                            <span class="tag">Modern</span>
+                            <span class="tag">Interior</span>
+                        </div>
+                        <button class="add-to-cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination-section">
+                <div class="pagination">
+                    <a href="#" class="page-btn disabled">Previous</a>
+                    <a href="#" class="page-btn active">1</a>
+                    <a href="#" class="page-btn">2</a>
+                    <a href="#" class="page-btn">3</a>
+                    <a href="#" class="page-btn">Next</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ShopEase</h3>
+                    <p>Your trusted partner for premium quality products. We bring you the best in fashion, electronics, and home decor.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="fashion.html">Fashion</a></li>
+                        <li><a href="electronics.html">Electronics</a></li>
+                        <li><a href="home-decor.html">Home Decor</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ShopEase. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

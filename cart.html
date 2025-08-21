@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - ShopEase</title>
+    <meta name="description" content="Review your shopping cart items and proceed to checkout. Secure shopping experience with easy cart management.">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">ShopEase</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link">All Products</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Categories <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="fashion.html">Fashion</a>
+                            <a href="electronics.html">Electronics</a>
+                            <a href="home-decor.html">Home Decor</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-actions">
+                <a href="search.html" class="nav-icon"><i class="fas fa-search"></i></a>
+                <a href="#" class="nav-icon"><i class="fas fa-heart"></i></a>
+                <a href="cart.html" class="nav-icon active"><i class="fas fa-shopping-cart"></i><span class="cart-count">3</span></a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Shopping Cart</h1>
+            <p>Review your items and proceed to checkout</p>
+        </div>
+    </section>
+
+    <!-- Cart Content -->
+    <section class="cart-section">
+        <div class="container">
+            <div class="cart-grid">
+                <!-- Cart Items -->
+                <div class="cart-items">
+                    <div class="cart-header">
+                        <h2>Your Items (3)</h2>
+                        <button class="clear-cart-btn">Clear Cart</button>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="item-image">
+                            <img src="https://pixabay.com/get/g5e81979567e758a23c24616dad1323cd465f5cd9e5c91d1ce85b22d46e079a5ddc20adf1f8a5288bad115e5b5f01982f3681ab8ba4d4015b258839209d767782_1280.jpg" alt="Premium Beauty Set">
+                        </div>
+                        <div class="item-details">
+                            <h3>Premium Beauty Set</h3>
+                            <p class="item-category">Fashion > Beauty</p>
+                            <div class="item-features">
+                                <span class="feature">Complete Set</span>
+                                <span class="feature">Organic</span>
+                            </div>
+                            <div class="item-actions">
+                                <button class="action-link">Save for Later</button>
+                                <button class="action-link remove-item">Remove</button>
+                            </div>
+                        </div>
+                        <div class="item-quantity">
+                            <label>Quantity</label>
+                            <div class="quantity-controls">
+                                <button class="qty-btn minus">-</button>
+                                <input type="number" value="1" min="1" class="qty-input">
+                                <button class="qty-btn plus">+</button>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            <div class="current-price">$49.99</div>
+                            <div class="original-price">$79.99</div>
+                            <div class="savings">You save $30.00</div>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="item-image">
+                            <img src="https://pixabay.com/get/g44ed12c06e76a142e3a07231951935d4515fdccc9590feb964ada77ef083625eac45caf225efc174b6369cace044e638f757925312a4ffcac474283e29ee6021_1280.jpg" alt="Latest Smartphone">
+                        </div>
+                        <div class="item-details">
+                            <h3>Latest 5G Smartphone</h3>
+                            <p class="item-category">Electronics > Smartphones</p>
+                            <div class="item-features">
+                                <span class="feature">128GB</span>
+                                <span class="feature">5G Ready</span>
+                            </div>
+                            <div class="item-actions">
+                                <button class="action-link">Save for Later</button>
+                                <button class="action-link remove-item">Remove</button>
+                            </div>
+                        </div>
+                        <div class="item-quantity">
+                            <label>Quantity</label>
+                            <div class="quantity-controls">
+                                <button class="qty-btn minus">-</button>
+                                <input type="number" value="1" min="1" class="qty-input">
+                                <button class="qty-btn plus">+</button>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            <div class="current-price">$699.99</div>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="item-image">
+                            <img src="https://pixabay.com/get/g9d304195177db4ff1523bce9eb5d986faa3455d7f461c9ada451f27a861af043c282fda512535518a3368a78246b0f10069693b11878f00d13df78cf285783df_1280.jpg" alt="Decorative Plant Pot">
+                        </div>
+                        <div class="item-details">
+                            <h3>Ceramic Plant Pot Collection</h3>
+                            <p class="item-category">Home Decor > Plants</p>
+                            <div class="item-features">
+                                <span class="feature">Set of 3</span>
+                                <span class="feature">Eco-Friendly</span>
+                            </div>
+                            <div class="item-actions">
+                                <button class="action-link">Save for Later</button>
+                                <button class="action-link remove-item">Remove</button>
+                            </div>
+                        </div>
+                        <div class="item-quantity">
+                            <label>Quantity</label>
+                            <div class="quantity-controls">
+                                <button class="qty-btn minus" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                                    <i class="fas fa-minus"></i>
+                                    <input type="number" value="1" min="0" max="10" class="qty-input">
+                                </button>
+                                
+                                <button class="qty-btn plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            <div class="current-price">$49.98</div>
+                            <div class="item-unit-price">$24.99 each</div>
+                        </div>
+                    </div>
+
+                    <!-- Continue Shopping -->
+                    <div class="continue-shopping">
+                        <a href="products.html" class="btn btn-outline">
+                            <i class="fas fa-arrow-left"></i>
+                            Continue Shopping
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="order-summary">
+                    <div class="summary-card">
+                        <h3>Order Summary</h3>
+                        
+                        <div class="summary-row">
+                            <span>Subtotal (4 items)</span>
+                            <span>$799.96</span>
+                        </div>
+                        
+                        <div class="summary-row">
+                            <span>Shipping</span>
+                            <span class="free">FREE</span>
+                        </div>
+                        
+                        <div class="summary-row">
+                            <span>Tax</span>
+                            <span>$64.00</span>
+                        </div>
+                        
+                        <div class="summary-row savings">
+                            <span>You Save</span>
+                            <span>-$30.00</span>
+                        </div>
+                        
+                        <div class="summary-divider"></div>
+                        
+                        <div class="summary-row total">
+                            <span>Total</span>
+                            <span>$833.96</span>
+                        </div>
+
+                        <div class="promo-code">
+                            <input type="text" placeholder="Enter promo code" class="promo-input">
+                            <button class="apply-btn">Apply</button>
+                        </div>
+
+                        <button class="btn btn-primary checkout-btn" onclick="window.location.href='checkout.html'">
+                            <i class="fas fa-lock"></i>
+                            Proceed to Checkout
+                        </button>
+
+                        <div class="payment-methods">
+                            <p>We accept:</p>
+                            <div class="payment-icons">
+                                <i class="fab fa-cc-visa"></i>
+                                <i class="fab fa-cc-mastercard"></i>
+                                <i class="fab fa-cc-amex"></i>
+                                <i class="fab fa-paypal"></i>
+                                <i class="fab fa-apple-pay"></i>
+                            </div>
+                        </div>
+
+                        <div class="security-info">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Secure checkout with SSL encryption</span>
+                        </div>
+                    </div>
+
+                    <!-- Shipping Info -->
+                    <div class="shipping-info-card">
+                        <h4>Shipping Information</h4>
+                        <div class="shipping-option">
+                            <div class="shipping-icon">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <div class="shipping-details">
+                                <h5>FREE Standard Shipping</h5>
+                                <p>Delivery in 5-7 business days</p>
+                            </div>
+                        </div>
+                        <div class="shipping-benefits">
+                            <div class="benefit">
+                                <i class="fas fa-check"></i>
+                                <span>Free returns within 30 days</span>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-check"></i>
+                                <span>Order tracking included</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ShopEase</h3>
+                    <p>Your trusted partner for premium quality products. We bring you the best in fashion, electronics, and home decor.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="fashion.html">Fashion</a></li>
+                        <li><a href="electronics.html">Electronics</a></li>
+                        <li><a href="home-decor.html">Home Decor</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ShopEase. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- CSS-only scroll functionality -->
+
+    <style>
+        .page-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 120px 0 80px;
+            margin-top: 70px;
+            text-align: center;
+            color: white;
+        }
+
+        .page-header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .cart-section {
+            padding: 80px 0;
+        }
+
+        .cart-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+        }
+
+        .cart-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #e5e7eb;
+        }
+
+        .clear-cart-btn {
+            background: none;
+            border: none;
+            color: #ef4444;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        .cart-item {
+            display: grid;
+            grid-template-columns: 120px 1fr 150px 120px;
+            gap: 1.5rem;
+            padding: 2rem 0;
+            border-bottom: 1px solid #e5e7eb;
+            align-items: start;
+        }
+
+        .item-image img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .item-details h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .item-category {
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .item-features {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature {
+            background: #f3f4f6;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            color: #6b7280;
+        }
+
+        .item-actions {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .action-link {
+            background: none;
+            border: none;
+            color: #2563eb;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+
+        .remove-item {
+            color: #ef4444;
+        }
+
+        .quantity-controls {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .qty-btn {
+            width: 32px;
+            height: 32px;
+            border: 1px solid #d1d5db;
+            background: white;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .qty-input {
+            width: 60px;
+            text-align: center;
+            border: 1px solid #d1d5db;
+            padding: 8px;
+            border-radius: 4px;
+        }
+
+        .item-price {
+            text-align: right;
+        }
+
+        .current-price {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #2563eb;
+        }
+
+        .original-price {
+            text-decoration: line-through;
+            color: #9ca3af;
+            font-size: 0.9rem;
+        }
+
+        .savings {
+            color: #10b981;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .item-unit-price {
+            color: #6b7280;
+            font-size: 0.8rem;
+        }
+
+        .continue-shopping {
+            margin-top: 2rem;
+        }
+
+        .order-summary {
+            position: sticky;
+            top: 100px;
+        }
+
+        .summary-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            margin-bottom: 1.5rem;
+        }
+
+        .summary-card h3 {
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+
+        .summary-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+
+        .summary-row.savings {
+            color: #10b981;
+        }
+
+        .summary-row.total {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #1f2937;
+        }
+
+        .free {
+            color: #10b981;
+            font-weight: 500;
+        }
+
+        .summary-divider {
+            height: 1px;
+            background: #e5e7eb;
+            margin: 1.5rem 0;
+        }
+
+        .promo-code {
+            display: flex;
+            gap: 0.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .promo-input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+        }
+
+        .apply-btn {
+            padding: 10px 20px;
+            background: #f3f4f6;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .checkout-btn {
+            width: 100%;
+            margin: 1.5rem 0;
+            padding: 15px;
+            font-size: 1.1rem;
+        }
+
+        .payment-methods {
+            text-align: center;
+            margin: 1.5rem 0;
+        }
+
+        .payment-methods p {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            color: #6b7280;
+        }
+
+        .payment-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            font-size: 1.5rem;
+            color: #6b7280;
+        }
+
+        .security-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            color: #10b981;
+            font-size: 0.9rem;
+        }
+
+        .shipping-info-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .shipping-option {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .shipping-icon {
+            background: #10b981;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .shipping-details h5 {
+            margin-bottom: 0.25rem;
+        }
+
+        .shipping-details p {
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+
+        .shipping-benefits {
+            padding-top: 1rem;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        .benefit {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .benefit i {
+            color: #10b981;
+        }
+
+        .cart-count {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background: #ef4444;
+            color: white;
+            border-radius: 50%;
+            width: 18px;
+            height: 18px;
+            font-size: 0.7rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-icon {
+            position: relative;
+        }
+
+        .nav-icon.active {
+            color: #2563eb;
+        }
+
+        @media (max-width: 768px) {
+            .cart-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .cart-item {
+                grid-template-columns: 80px 1fr;
+                gap: 1rem;
+            }
+
+            .item-quantity, .item-price {
+                grid-column: 1 / -1;
+                margin-top: 1rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .order-summary {
+                position: static;
+            }
+        }
+    </style>
+    <script>
+// Remove cart item on "Remove" button click
+document.querySelectorAll('.remove-item').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+        // Find the closest parent with class 'cart-item' and remove it
+        const cartItem = btn.closest('.cart-item');
+        if (cartItem) {
+            cartItem.remove();
+        }
+    });
+});
+</script>
+</body>
+</html>
